@@ -1,1 +1,12 @@
 Favor object composition over class inheritance.
+
+Example:
+"""
+Behind every successful man, there is always a women to encourage and support her...
+"""
+
+Inheritance can be used to represent the different types of women (e.g., mother, wife, sister, daughter) as subclasses of a common "Woman" base class.
+
+and
+
+Composition can be used to represent the different types of support (e.g., mother's support, wife's support, sister's support, daughter's inspiration) as separate classes that can be composed within a "SuccessfulMan" class.
