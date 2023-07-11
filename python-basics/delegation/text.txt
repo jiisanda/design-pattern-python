@@ -1,0 +1,48 @@
+Delegation
+
+With delegation, the receiver passes itself to the delegate to let the delegated 
+operation refer to the receiver. 
+
+Example:
+
+class Parent:
+    def __init__(self):
+        self.child = child
+
+
+class Child:
+    def take_out_trash(self):
+        ... do something ...
+
+
+if __name__ == '__main':
+    parent = Parent()
+    parent.child.take_out_trash()
+
+
+Here, every time you want to take_out_trash(), you have to call the child directly.
+
+
+Solution:
+Writing a wrapper method
+
+class Parent:
+    def __init__(self):
+        self.child = child
+    
+    def take_out_trash(self):
+        return self.child.take_out_trash()
+
+
+class Child:
+    def take_out_trash(self):
+        ... do something ...
+
+
+if __name__ == '__main__':
+    parent = Parent()
+    parent.take_out_trash()
+
+
+This is less verbose, but there is a duplicate method which is violating the DRY, making it WET O_O
+
