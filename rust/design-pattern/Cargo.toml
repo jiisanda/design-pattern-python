@@ -1,0 +1,10 @@
+[package]
+name = "design-pattern"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "singleton"
+path = "./creational_pattern/singleton_pattern/main.rs"
+
+[dependencies]
