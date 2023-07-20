@@ -7,4 +7,8 @@ edition = "2021"
 name = "singleton"
 path = "./creational_pattern/singleton_pattern/main.rs"
 
+[[bin]]
+name = "factory"
+path = "./creational_pattern/factory_method_pattern/main.rs"
+
 [dependencies]
